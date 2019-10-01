@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/foundation.dart'
     show debugDefaultTargetPlatformOverride;
+import './src/dados.dart';
 
 void main() {
   debugDefaultTargetPlatformOverride = TargetPlatform.fuchsia;
@@ -8,6 +9,8 @@ void main() {
 }
 
 class MyApp extends StatelessWidget{
+
+
 
   @override
   Widget build(BuildContext context) {
@@ -20,7 +23,9 @@ class MyApp extends StatelessWidget{
           title: Text('League'),
           centerTitle: true,
         ),
-      ),
+
+        body: ListOfChamps(),
+      )
     );
   }
 }
